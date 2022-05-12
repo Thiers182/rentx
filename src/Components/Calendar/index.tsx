@@ -47,6 +47,8 @@ export function Calendar(){
           marginHorizontal: -15
         }
       }}  
+      firstDay={1} 
+      
     />
   );
 }

@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import AppLoading from 'expo-app-loading';
 import {ThemeProvider} from 'styled-components' // utilizado para poder usar o Theme criado por nós
@@ -14,7 +15,8 @@ import {
   Inter_500Medium,
 } from '@expo-google-fonts/inter'
 
-import { Scheduling } from './src/screens/Scheduling';
+import { Routes } from './src/routes';
+
 import theme from './src/styles/theme';
 
 export default function App() {
@@ -34,7 +36,7 @@ export default function App() {
   return (
     //o theme provider vai buscar o tema que criamos, por isto pereceba que o theme foi importado
     <ThemeProvider theme={theme}>
-      <Scheduling/>
+      <Routes /> 
 
     </ThemeProvider>
   )
